@@ -88,6 +88,43 @@
                     <additionalparam>-Xdoclint:none</additionalparam>
                 </configuration>
             </plugin>
+            <!-- added this!! -->
+            <plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+
+			<!-- Create Sources and jar (EXAMPLES ONLY). -->
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+			<!-- The Dependency plugin is used here to copy our dependencies into 
+				the target/lib folder. -->
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+			</plugin>
+
+			<!-- The Jar plugin packages the project output into a JAR file. What's 
+				special here is that we specify the classpath for our dependencies in the 
+				manifest, and also make the JAR executable. -->
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
+
+
+			<!-- The service loader plugin helps you generate META-INF/services/* 
+				for your services. -->
+			<!-- Currently creates for sg.edu.ntu.crowdtools.launcher.PrototypeScenarioProvider. -->
+			<plugin>
+				<groupId>eu.somatik.serviceloader-maven-plugin</groupId>
+				<artifactId>serviceloader-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.owasp</groupId>
+				<artifactId>dependency-check-parent</artifactId>
+				<version>1.2.9-SNAPSHOT</version>
+                <!-- default:3.3.4 -->
+			</plugin>
         </plugins>
     </build>
 

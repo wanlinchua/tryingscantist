@@ -154,12 +154,13 @@
         <dependency>
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-core</artifactId>
-            <version>${dependency.check.version}</version>
+            <version>3.3.4</version>
+	<!-- default: ${dependency.check.version}-->
         </dependency>
         <dependency>
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-utils</artifactId>
-            <version>${dependency.check.version}</version>
+            <version>3.3.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>

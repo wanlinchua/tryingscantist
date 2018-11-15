@@ -204,8 +204,8 @@
 
     <scm>
         <connection>scm:git:git@github.com:jenkinsci/dependency-check-plugin.git</connection>
-        <url>https://github.com/jenkinsci/dependency-check-plugin.git</url>
-        <developerConnection>scm:git:git@github.com:jenkinsci/dependency-check-plugin.git</developerConnection>
+        <url>https://github.com/wanlinchua/tryingscantist.git</url>
+        <developerConnection>scm:git:git@github.com:wanlinchua/tryingscantist.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
